@@ -3,7 +3,7 @@ import './App.css';
 import MyNav from './Components/MyNavbarComponent'
 import MyFooter from "./Components/MyFooter";
 import MyAlert from "./Components/Welcome";
-
+import Cards from "./Components/AllTheBooks"; 
 function App() {
   return (
     <div className="App">
@@ -11,6 +11,7 @@ function App() {
         <MyNav/>
       </header>
       <MyAlert/>
+      <Cards/>
       <MyFooter/>
     </div>
   );
