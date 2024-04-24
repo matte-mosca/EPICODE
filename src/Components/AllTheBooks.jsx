@@ -2,10 +2,11 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import fantasyBooks from "./fantasy.json";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Cards() {
   return (
+    <Container className="mt-5">
     <Row xs={1} sm={2} md={3} lg={4} className="g-4">
       {fantasyBooks.map((Book) => {
         return (
@@ -24,6 +25,7 @@ function Cards() {
         );
       })}
     </Row>
+    </Container>
   );
 }
 
